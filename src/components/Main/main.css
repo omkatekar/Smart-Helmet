@@ -1,0 +1,21 @@
+.bx{
+    box-shadow: 7px 11px 10px -3px rgba(0,0,0,0.75);
+    animation:uplift 1s normal; 
+}
+
+@keyframes uplift{
+    0%{
+        opacity: 0.25;
+        transform: translateY(10px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(5px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+

@@ -1,0 +1,46 @@
+.her{
+    /* background: linear-gradient(blueviolet,black); */
+    animation: godown 1s normal;
+    /* background-image: linear-gradient(black); */
+    background-image:url('../../assets/sunset.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-origin:unset; */
+    background-position:right ;
+}
+
+.aniLeft{
+    animation:leftSlide 1s normal;
+    font-weight: 500;
+}
+
+
+@keyframes leftSlide{
+    0%{
+        opacity: 0.5;
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+div{
+    z-index: 999;
+}
+
+@keyframes godown{
+    0%{
+        opacity: 0.25;
+        transform: translateY(-10px);
+    }
+    50%{
+        opacity: 0.5;
+        transform: translateY(-5px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
